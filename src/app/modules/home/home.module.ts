@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import {FormsModule} from "@angular/forms";
 //Components
 import { HeaderComponent } from './components/header/header.component';
 import { TodoButtonDeleteAllComponent } from './components/todo-button-delete-all/todo-button-delete-all.component';
@@ -9,6 +9,8 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 //Pages
 import { HomeComponent } from './pages/home/home.component';
+import {Format} from "@angular-devkit/build-angular/src/builders/extract-i18n/schema";
+
 
 
 
@@ -21,7 +23,8 @@ import { HomeComponent } from './pages/home/home.component';
     HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class HomeModule { }
