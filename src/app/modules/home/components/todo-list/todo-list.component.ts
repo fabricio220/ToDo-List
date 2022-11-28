@@ -22,4 +22,8 @@ export class TodoListComponent {
       this.taskList = [];
     }
   }
+
+  setEmitTaskList(event: string): void{
+    this.taskList.push({ task: event, checked: false })
+  }
 }
